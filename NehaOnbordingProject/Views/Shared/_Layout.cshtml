@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 25px;
+                text-decoration: none;
+                font-size: 15px
+            }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+       
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("React", "Index", "Home")</li>
+            <li>@Html.ActionLink("Customers", "Index", "Customer")</li>
+            <li>@Html.ActionLink("Products", "Index", "Product")</li>
+            <li>@Html.ActionLink("Stores", "Index", "Store")</li>
+            <li>@Html.ActionLink("Sales", "Index", "Sales")</li>
+        </ul>
+</div>
+        
+    <div class="container body-content" style=" padding:5%">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/b")
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

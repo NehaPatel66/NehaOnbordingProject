@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b57f67a1d0144bd88d38aab488c510a4" Name="Diagram1">
+        <EntityTypeShape EntityType="OnbordingTalentModel.Customer" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnbordingTalentModel.Product" Width="1.5" PointX="6.625" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnbordingTalentModel.Sale" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnbordingTalentModel.Store" Width="1.5" PointX="3.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnbordingTalentModel.sysdiagram" Width="1.5" PointX="9.375" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="OnbordingTalentModel.FK_Sales_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="OnbordingTalentModel.FK_Sales_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="OnbordingTalentModel.FK_Sales_Store" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
